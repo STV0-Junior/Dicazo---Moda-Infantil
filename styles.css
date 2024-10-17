@@ -1,0 +1,543 @@
+/* Reset básico */
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #fbe6ad;
+  background-image: url("imagens_site/");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #000;
+  height: 100vh;
+  padding: 5vh 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Logo */
+.logo {
+  margin-top: 2vh;
+  max-width: 40vh; /* Ajustado para melhor responsividade */
+  width: 100%; /* Para que a logo se ajuste ao container */
+  margin-bottom: 11vh;
+  z-index: 10;
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+/* Centralização do conteúdo */
+.container {
+  position: relative;
+  z-index: 10;
+  padding: 0 5%;
+}
+
+/* Fonte padrão */
+.textos,
+.texto1,
+.sobre-nuvens h1,
+.sobre-nuvens p,
+.container2 h2,
+.container2 p {
+  font-style: sans-serif; /* Mudança para Arial */
+}
+
+/* Estilo do texto esse*/
+.textos {
+  font-size: 2rem;
+  color: #120979;
+  position: relative;
+  top: -10vh;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 2rem;
+}
+
+.texto1 {
+  color: #120979;
+  position: relative;
+  top: -10vh;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+/* Nuvens */
+.nuvem {
+  position: absolute;
+  width: 25%; /* Ajustado para melhor responsividade */
+  height: auto;
+  display: block;
+}
+
+.nuvem1 {
+  top: 5vh;
+  animation: mover 20s linear infinite;
+}
+
+.nuvem2 {
+  top: 30vh;
+  right: -5%;
+  animation: mover-esquerda 25s linear infinite;
+}
+
+.nuvem3 {
+  top: 55vh;
+  animation: mover 18s linear infinite;
+}
+
+.nuvem img {
+  width: 85%; /* Ajustado para responsividade */
+  height: auto;
+}
+
+/* Seção "Sobre nós" */
+.sobre-nuvens {
+  position: relative;
+  z-index: 11;
+  padding: 2rem;
+  max-width: 90%;
+  margin: 0 auto; /* Centraliza a seção */
+  text-align: left;
+  color: #120979;
+  font-size: 2rem; /* Mantive o tamanho do texto da seção "Sobre nós" */
+}
+.sobre-nuvens h1 {
+  margin-top: -60px;
+  font-size: 3rem;
+}
+.sobre-nuvens p {
+  margin-bottom: 90px;
+  font-size: 1.5rem;
+}
+
+
+
+/* Estilo da seção "Sobre" */
+#about {
+  background-color: #120979;
+  background-repeat: repeat; /* Não repetir a imagem */
+  background-size: 100px auto; /* Cobrir toda a seção */
+  background-position: center 100vh; /* Centralizar a imagem */
+  padding: 25vh 0;
+  color: white; /* Define a cor do texto como branco */
+  position: relative;
+}
+#about::before {
+  content: ""; /* Necessário para o pseudo-elemento */
+  position: absolute; /* Posicionar absolutamente */
+  top: 0; /* Início do topo */
+  left: 0; /* Início à esquerda */
+  right: 0; /* Até o lado direito */
+  bottom: 0; /* Até a parte inferior */
+  background-image: url("imagens_site/presente1.png"); /* A imagem de fundo */
+  background-repeat: repeat; /* Repete a imagem */
+  background-size: 80px auto;; /* Ajusta o tamanho da imagem */
+  opacity: 0.05; /* Define a opacidade desejada (0 a 1) */
+  background-position: 800vh 800vh;
+  z-index: 0; /* Colocar atrás do conteúdo */
+}
+
+
+/*backgraund*/
+
+
+/*titulo dos nossos produtos*/
+.section-title {
+  font-style: sans-serif; /* Mudança para Arial */
+  margin-bottom: 90px; /* Ajuste o valor conforme necessário para aumentar ou diminuir o espaço */
+  font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+  text-align: center; /* Centraliza o título, se desejado */
+  color: white; /* Cor do título, ajuste conforme sua paleta de cores */
+  position: relative;
+}
+
+.container2 h2 {
+  margin-top: -90px;
+  color: white; /* Altera a cor do título para branco */
+  font-size: 10vh;
+}
+
+.container2 p {
+  color: white; /* Altera a cor do parágrafo para branco */
+}
+
+.container2 {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.contact-button {
+  text-align: center; /* Centraliza o botão */
+  margin-top: 60px; /* Espaço acima do botão */
+  position: relative;
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+.contact-button button {
+  background-color: #fbe6ad; /* Cor de fundo do botão */
+  color: #120979; /* Cor do texto do botão */
+  border: none; /* Remove a borda padrão */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  font-size: 1.2rem; /* Tamanho da fonte */
+  cursor: pointer; /* Aponta para o cursor quando passa sobre o botão */
+  transition: background-color 0.3s ease; /* Efeito de transição ao passar o mouse */
+  border-radius: 20vh;
+}
+
+.contact-button button:hover {
+  background-color: #ff7b00; /* Cor ao passar o mouse */
+}
+
+/* Estilo da Nova Seção */
+#tecidos {
+  background-color: #fbe6ad; /* Cor de fundo da seção */
+  padding: 45vh 0; /* Espaçamento */
+  color: #120979;
+  margin-top: -150px;
+}
+
+.container3 {
+  max-width: 1200px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 0 20px; /* Espaçamento nas laterais */
+  text-align: center; /* Centraliza o texto */
+  
+}
+
+.section-title2 {
+  font-size: 4rem; /* Tamanho do título */
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.tecidos-container {
+  display: flex; /* Permite alinhar os itens em linha */
+  justify-content: space-around; /* Espaça os itens uniformemente */
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se não houver espaço */
+}
+
+.tecido-item {
+  margin: 20px; /* Espaçamento entre os itens */
+  flex: 1 1 30%; /* Permite que os itens ocupem espaço igual com base em 30% da largura */
+  max-width: 200px; /* Largura máxima dos itens */
+  
+  border-radius: 8px; /* Arredonda os cantos do contorno */
+  padding: 15px; /* Espaçamento interno */
+  background-color: rgba(194, 184, 162, 0.8); /* Cor de fundo com opacidade (80%) */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito visual */
+  transition: transform 0.3s; /* Efeito de transição suave */
+  
+}
+
+
+.tecido-content {
+  text-align: center; /* Centraliza o texto e a imagem */
+}
+
+.tecido-content img {
+  max-width: 100px; /* Largura máxima da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-bottom: 10px; /* Espaçamento inferior da imagem */
+}
+
+.tecido-content h3 {
+  font-size: 1.5em; /* Tamanho do subtítulo */
+  margin-bottom: 5px; /* Espaçamento inferior */
+}
+
+.tecido-content p {
+  font-size: 1em; /* Tamanho do texto */
+}
+
+/*seção de pagamentos*/
+#pagamentos {
+  background-color: #120979; /* Cor de fundo para a seção */
+  padding: 25vh 0; /* Espaçamento superior e inferior */
+  position: relative;
+  text-align: center;
+}
+#pagamentos {
+  background-color: #120979;
+  background-repeat: repeat; /* Não repetir a imagem */
+  background-size: 100px auto; /* Cobrir toda a seção */
+  background-position: center 100vh; /* Centralizar a imagem */
+  padding: 25vh 0;
+  color: white; /* Define a cor do texto como branco */
+  position: relative;
+}
+#pagamentos::before {
+  content: ""; /* Necessário para o pseudo-elemento */
+  position: absolute; /* Posicionar absolutamente */
+  top: 0; /* Início do topo */
+  left: 0; /* Início à esquerda */
+  right: 0; /* Até o lado direito */
+  bottom: 0; /* Até a parte inferior */
+  background-image: url("imagens_site/presente1.png"); /* A imagem de fundo */
+  background-repeat: repeat; /* Repete a imagem */
+  background-size: 80px auto;; /* Ajusta o tamanho da imagem */
+  opacity: 0.05; /* Define a opacidade desejada (0 a 1) */
+  background-position: 800vh 800vh;
+  z-index: 0; /* Colocar atrás do conteúdo */
+}
+
+
+.pagamento-gallery {
+  display: flex; /* Usa flexbox para organizar os itens */
+  justify-content: space-between; /* Espaça os itens igualmente */
+  flex-wrap: wrap; /* Permite que os itens quebrem de linha se necessário */
+  gap: 0; /* Reduzi o espaçamento entre os itens para 5px */
+  margin:0 auto ;
+  max-width: 1200px;
+  padding: 0 5%;
+  margin-bottom: 15vh;
+}
+
+.section-title3 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 8vh;
+  color: white; /* Cor do texto do título */
+}
+
+.pagamento-item {
+  margin: 0; /* Reduzi o espaçamento entre os itens para 5px */
+  flex: 1 1 30%; /* Permite que os itens ocupem espaço igual com base em 30% da largura */
+  max-width: 200px; /* Largura máxima dos itens */
+  border-radius: 8px; /* Arredonda os cantos do contorno */
+  color: black;
+  padding: 40px; /* Mantive o espaçamento interno */
+  background-color: rgba(251, 228, 173, 0.8); /* Cor de fundo com opacidade */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito visual */
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              box-shadow 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* Suaviza a transição */
+  cursor: pointer; /* Aponta para o cursor ao passar o mouse */
+  position: relative;
+}
+
+.pagamento-item:hover {
+  transform: scale(1.1); /* Aumenta o item ao passar o mouse */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra maior ao passar o mouse */
+}
+
+.pagamento-item .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fundo escurecido com opacidade */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* Transição suave para o overlay */
+}
+
+.pagamento-item:hover .overlay {
+  opacity: 1; /* Mostra o overlay ao passar o mouse */
+}
+
+
+
+
+
+
+
+/* Estilo do footer */
+footer {
+  font-family: "arial" sans-serif;
+  background-color: #fbe6ad; /* Cor de fundo */
+  color: #120979; /* Cor do texto */
+  padding: 2rem 0; /* Espaçamento interno */
+  font-size: 1.2rem; /* Tamanho da fonte */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Sombra em cima */
+}
+
+/* Container do rodapé */
+.footer-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 5%;
+}
+
+/* Estilo dos itens do rodapé */
+.footer-item {
+  flex: 1;
+  text-align: center;
+  margin: 0 20px;
+  margin-bottom: 15px;
+}
+
+/* Ícones sociais */
+.social-icon {
+  font-size: 1.8rem;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.social-icon.instagram {
+  color: #e1306c; /* Rosa para Instagram */
+}
+
+.social-icon.facebook {
+  color: #1877f2; /* Azul para Facebook */
+}
+
+.social-icon.tiktok {
+  color: #000000; /* Preto para TikTok */
+}
+
+/* Hover nos ícones */
+.social-icon.instagram:hover {
+  color: #c13584; /* Cor de hover para o Instagram */
+}
+
+.social-icon.facebook:hover {
+  color: #0056b3; /* Cor de hover para o Facebook */
+}
+
+.social-icon.tiktok:hover {
+  color: #333333; /* Cor de hover para o TikTok */
+}
+
+
+/* Botão do WhatsApp */
+.whatsapp {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.whatsapp .icon {
+  background-color: #25d366;
+  color: white;
+  padding: 3vh;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* Keyframes */
+@keyframes flutuar {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3vh);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(-60vw);
+  }
+  100% {
+    transform: translateX(150vw);
+  }
+}
+
+@keyframes mover-esquerda {
+  0% {
+    transform: translateX(60vw);
+  }
+  100% {
+    transform: translateX(-150vw);
+  }
+}
+
+
+/* Estilização do galeria */
+.product-gallery {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espaçamento entre os produtos */
+  z-index: 1;
+}
+
+.product-item {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* Suaviza a transição */
+  border-radius: 5%; /* Aplica o border-radius ao contêiner */
+}
+
+.product-item .content {
+  position: relative;
+}
+
+.product-item img {
+  width: 100%;
+  height: 300px; /* Altura fixa para garantir consistência */
+  object-fit: cover; /* Garante que a imagem não seja cortada */
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* Suaviza a animação da imagem */
+  border-radius: 5%; /* Aplica o border-radius à imagem */
+}
+
+.product-item:hover {
+  transform: scale(1.1); /* Aumenta o contêiner durante o hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra para destacar o contêiner */
+}
+
+/* Mantenha a imagem estável enquanto o contêiner cresce */
+.product-item:hover img {
+  transform: none; /* Remove o redimensionamento da imagem para evitar cortes */
+}
+
+.product-item .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fundo escurecido com opacidade */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* Transição suave para o overlay */
+}
+
+.product-item:hover .overlay {
+  opacity: 1; /* Mostra o overlay ao passar o mouse */
+}
+
+.product-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.product-item span {
+  font-size: 1.2rem;
+}
